@@ -5,9 +5,9 @@
                 <a class="desktop-logo logo-light active" href="{{ url('/' . $page='dashboard') }}">
                     <i class="fas fa-album side-menu__icon" aria-hidden="true"></i>
                 </a>
-				<a class="desktop-logo logo-dark active" href="{{ url('/' . $page='dashboard') }}"><img src="{{asset('assets/img/brand/logo-white.png')}}" class="main-logo dark-theme" alt="logo"></a>
-				<a class="logo-icon mobile-logo icon-light active" href="{{ url('/' . $page='dashboard') }}"><img src="{{asset('assets/img/brand/favicon.png')}}" class="logo-icon" alt="logo"></a>
-				<a class="logo-icon mobile-logo icon-dark active" href="{{ url('/' . $page='dashboard') }}"><img src="{{asset('assets/img/brand/favicon-white.png')}}" class="logo-icon dark-theme" alt="logo"></a>
+				<a class="desktop-logo logo-dark active" href="{{ url('/' . $page='dashboard') }}"><img src="" class="main-logo dark-theme" alt="logo"></a>
+				<a class="logo-icon mobile-logo icon-light active" href="{{ url('/' . $page='dashboard') }}"><img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class="logo-icon" alt="logo"></a>
+				<a class="logo-icon mobile-logo icon-dark active" href="{{ url('/' . $page='dashboard') }}"><img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class="logo-icon dark-theme" alt="logo"></a>
 			</div>
 			<div class="main-sidemenu">
 				<div class="app-sidebar__user clearfix">
