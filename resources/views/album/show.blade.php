@@ -37,7 +37,7 @@
                                     <div class="card-body">
                                         <div class="pro-img-box">
                                             <!-- Icon within the photo section -->
-                                            <img class="w-100" src="{{  asset('albums/'.$album->hashed_id.'/'.$picture->path) }}">
+                                            <img class="w-100" style="width: 150px; height: 200px; object-fit: cover;" src="{{  asset('albums/'.$album->hashed_id.'/'.$picture->path) }}">
                                         </div>
 
                                         <!-- Buttons for each album -->
