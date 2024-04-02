@@ -17,13 +17,13 @@
 
     <!-- row -->
     <div class="row">
-        @include('partials.alerts')
-            <div class="col-xl-12">
+            <div class="col-xl-12 mt-5">
+                @include('partials.alerts')
                 <div class="card mg-b-20">
                     <div class="card-header pb-2 mb-3">
                         <div class="d-flex justify-content-between align-items-center">
-                                <a class="modal-effect btn btn-outline-success btn-block" data-effect="effect-scale"
-                                   data-toggle="modal" href="#addAlbumModal">Add Album</a>
+                            <a class="modal-effect btn btn-outline-success btn-block" data-effect="effect-scale"
+                               data-toggle="modal" href="#addAlbumModal">Add Album</a>
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
@@ -33,7 +33,7 @@
                                     <div class="card-body">
                                         <div class="pro-img-box">
                                             <!-- Icon within the photo section -->
-                                            <img class="w-100" src="{{ isset($album->Picture->url) ? $album->Picture->url->first() : URL::asset('assets/img/ecommerce/01.jpg') }}" alt="{{$album->name}}">
+                                            <img class="w-100" src="{{ $album->pictures->first() ? asset('albums/'.$album->hashed_id.'/'.$album->pictures->first()->path) : URL::asset('assets/img/ecommerce/01.jpg') }}" alt="{{$album->name}}">
                                             <a href="{{route('albums.show',$album->id)}}" class="adtocart"> <i class="la la-image"></i></a>
                                         </div>
                                         <div class="text-center pt-3">
