@@ -19,11 +19,11 @@
 
 
 							<div class="dropdown main-profile-menu nav nav-item nav-link">
-								<a class="profile-user d-flex" href=""><img alt="" src="{{asset('assets/img/faces/6.jpg')}}"></a>
+								<a class="profile-user d-flex" href=""><img alt="" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png"></a>
 								<div class="dropdown-menu">
 									<div class="main-header-profile bg-primary p-3">
 										<div class="d-flex wd-100p">
-											<div class="main-img-user"><img alt="" src="{{asset('assets/img/faces/6.jpg')}}" class=""></div>
+											<div class="main-img-user"><img alt="" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" class=""></div>
 											<div class="mr-3 my-auto">
 												<h6>{{auth()->user()->name}}</h6><span>{{auth()->user()->email}}</span>
 											</div>
