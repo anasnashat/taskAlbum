@@ -148,16 +148,16 @@
             thumbnailWidth: 200,
             maxFilesize: 1,
             acceptedFiles: ".jpeg,.jpg,.png,.gif",
-            success: function(file, response) {
-                // Assuming 'response' is the server's reply that indicates success
-                if(response.status === 'success') {
-                    // Close the Dropzone form
-                    this.removeFile(file); // Removes the file preview.
-                    // Optionally, if you want to hide the entire form:
-                    $('#image-upload').hide(); // Hides the Dropzone form
-                }
+            complete: function(file) {
+                // Close the Dropzone form
+                this.removeFile(file); // Removes the file preview.
+                // Optionally, if you want to hide the entire form:
+                $('#image-upload').hide();
+                window.location.reload();
+                // Reload the page
             }
         });
+
 
     </script>
 
