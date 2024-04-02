@@ -33,7 +33,7 @@
                                     <div class="card-body">
                                         <div class="pro-img-box">
                                             <!-- Icon within the photo section -->
-                                            <img class="w-100" src="{{ $album->pictures->first() ? asset('albums/'.$album->hashed_id.'/'.$album->pictures->first()->path) : URL::asset('assets/img/ecommerce/01.jpg') }}" alt="{{$album->name}}">
+                                            <img class="w-100" style="width: 150px; height: 200px; object-fit: cover;" src="{{ $album->pictures->first() ? asset('albums/'.$album->hashed_id.'/'.$album->pictures->first()->path) : URL::asset('assets/img/ecommerce/01.jpg') }}" alt="{{$album->name}}">
                                             <a href="{{route('albums.show',$album->id)}}" class="adtocart"> <i class="la la-image"></i></a>
                                         </div>
                                         <div class="text-center pt-3">
