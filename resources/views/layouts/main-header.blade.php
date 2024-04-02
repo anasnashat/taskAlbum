@@ -29,7 +29,7 @@
 											</div>
 										</div>
 									</div>
-									<a class="dropdown-item" href=""><i class="bx bx-user-circle"></i>Profile</a>
+									<a class="dropdown-item" href="{{ route('dashboard') }}"><i class="bx bx-user-circle"></i>Profile</a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i
