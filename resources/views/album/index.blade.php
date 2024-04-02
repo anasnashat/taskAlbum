@@ -17,7 +17,7 @@
 
     <!-- row -->
     <div class="row">
-
+        @include('partials.alerts')
             <div class="col-xl-12">
                 <div class="card mg-b-20">
                     <div class="card-header pb-2 mb-3">
