@@ -18,9 +18,10 @@
 
     <!-- row -->
     <div class="row">
-        @include('partials.alerts')
 
-            <div class="col-xl-12">
+            <div class="col-xl-12 mt-5">
+                @include('partials.alerts')
+
                 <div class="card mg-b-20">
                     <div class="card-header pb-2 mb-3">
                         <div class="d-flex justify-content-between align-items-center">
