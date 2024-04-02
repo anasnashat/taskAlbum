@@ -86,7 +86,7 @@ class AlbumController extends Controller
     {
         try {
             $album = Album::findOrFail($request->input('id'));
-            File::deleteDirectory('albums/'.$album->hached_id);
+            File::deleteDirectory('albums/'.$album->hashed_id);
             $album->delete();
             return to_route('albums.index')->with('success','the album has been deleted');
         } catch(Throwable $e){
