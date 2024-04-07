@@ -36,7 +36,6 @@ class PictureController extends Controller
         $imageName = time().rand(1,99).'.'.$image->getClientOriginalExtension();
         $image->move(public_path('albums/'.$album->hashed_id), $imageName);
 
-// Since $imageName is just a single string, we don't need to loop through it
         Picture::create(['album_id' => $album->id, 'path' => $imageName]);
 
         return response()->json(['success' => $imageName]);
@@ -72,7 +71,6 @@ class PictureController extends Controller
      */
     public function destroy(Request $request, Album $album)
     {
-//        dd($album);
         try {
             $picture = Picture::findOrFail($request->input('id'));
 
