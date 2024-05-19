@@ -5,6 +5,9 @@ use App\Http\Controllers\PictureController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::fallback(function () {
+    return redirect()->route('albums.index');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
